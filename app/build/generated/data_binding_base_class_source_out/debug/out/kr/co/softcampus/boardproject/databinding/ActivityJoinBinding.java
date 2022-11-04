@@ -25,13 +25,7 @@ public final class ActivityJoinBinding implements ViewBinding {
   public final Button buttonJoin;
 
   @NonNull
-  public final EditText etAge;
-
-  @NonNull
   public final EditText etId;
-
-  @NonNull
-  public final EditText etName;
 
   @NonNull
   public final EditText etPass;
@@ -40,13 +34,10 @@ public final class ActivityJoinBinding implements ViewBinding {
   public final TextView joinPage;
 
   private ActivityJoinBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonJoin,
-      @NonNull EditText etAge, @NonNull EditText etId, @NonNull EditText etName,
-      @NonNull EditText etPass, @NonNull TextView joinPage) {
+      @NonNull EditText etId, @NonNull EditText etPass, @NonNull TextView joinPage) {
     this.rootView = rootView;
     this.buttonJoin = buttonJoin;
-    this.etAge = etAge;
     this.etId = etId;
-    this.etName = etName;
     this.etPass = etPass;
     this.joinPage = joinPage;
   }
@@ -84,21 +75,9 @@ public final class ActivityJoinBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.et_age;
-      EditText etAge = ViewBindings.findChildViewById(rootView, id);
-      if (etAge == null) {
-        break missingId;
-      }
-
       id = R.id.et_id;
       EditText etId = ViewBindings.findChildViewById(rootView, id);
       if (etId == null) {
-        break missingId;
-      }
-
-      id = R.id.et_name;
-      EditText etName = ViewBindings.findChildViewById(rootView, id);
-      if (etName == null) {
         break missingId;
       }
 
@@ -114,8 +93,8 @@ public final class ActivityJoinBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityJoinBinding((ConstraintLayout) rootView, buttonJoin, etAge, etId, etName,
-          etPass, joinPage);
+      return new ActivityJoinBinding((ConstraintLayout) rootView, buttonJoin, etId, etPass,
+          joinPage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

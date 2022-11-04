@@ -28,6 +28,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public CustomAdapter(ArrayList<TodoItem> todoItems, Context mContext) {
         this.mTodoItems = todoItems;
         this.mContext = mContext;
+
         mDBHelper = new DBHelper(mContext);
     }
 

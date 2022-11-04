@@ -4,29 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import kr.co.softcampus.boardproject.databinding.ActivityListBinding;
-
 public class ListActivity extends AppCompatActivity {
 
     private RecyclerView mRv_todo;
-    private FloatingActionButton mBtn_write;
+    private Button mBtn_write, mBtn_logout;
     private ArrayList<TodoItem> mTodoItems;
     private DBHelper mDBHelper;
     private CustomAdapter mAdapter;
+    private FirebaseAuth mFirebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +40,25 @@ public class ListActivity extends AppCompatActivity {
         mDBHelper = new DBHelper(this);
         mRv_todo = findViewById(R.id.rv_todo);
         mBtn_write = findViewById(R.id.btn_write);
+        mBtn_logout = findViewById(R.id.btn_logout);
         mTodoItems = new ArrayList<>();
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
+
 
         //기존에 저장되어 있던 DB를 가져온다.
         loadRecentDB();
+
+        mBtn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mFirebaseAuth.signOut();
+
+                Intent intent = new Intent(ListActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         mBtn_write.setOnClickListener(new View.OnClickListener() {
             @Override

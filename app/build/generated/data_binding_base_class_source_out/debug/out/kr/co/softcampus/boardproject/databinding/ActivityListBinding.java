@@ -4,13 +4,13 @@ package kr.co.softcampus.boardproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,14 +21,18 @@ public final class ActivityListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton btnWrite;
+  public final Button btnLogout;
+
+  @NonNull
+  public final Button btnWrite;
 
   @NonNull
   public final RecyclerView rvTodo;
 
-  private ActivityListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton btnWrite, @NonNull RecyclerView rvTodo) {
+  private ActivityListBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogout,
+      @NonNull Button btnWrite, @NonNull RecyclerView rvTodo) {
     this.rootView = rootView;
+    this.btnLogout = btnLogout;
     this.btnWrite = btnWrite;
     this.rvTodo = rvTodo;
   }
@@ -60,8 +64,14 @@ public final class ActivityListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_logout;
+      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.btn_write;
-      FloatingActionButton btnWrite = ViewBindings.findChildViewById(rootView, id);
+      Button btnWrite = ViewBindings.findChildViewById(rootView, id);
       if (btnWrite == null) {
         break missingId;
       }
@@ -72,7 +82,7 @@ public final class ActivityListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityListBinding((ConstraintLayout) rootView, btnWrite, rvTodo);
+      return new ActivityListBinding((ConstraintLayout) rootView, btnLogout, btnWrite, rvTodo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

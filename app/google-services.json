@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573524530918",
+    "project_id": "boardproject-90c2b",
+    "storage_bucket": "boardproject-90c2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573524530918:android:fc767de67180bd74950d27",
+        "android_client_info": {
+          "package_name": "kr.co.softcampus.boardproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573524530918-g7ki49chk8mpp5hmol1566hfujjqikav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJzYgL76MxlFOWMphw7YnDpzkZmxR8Vsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573524530918-g7ki49chk8mpp5hmol1566hfujjqikav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">BoardProject</string>
+    <string name="default_web_client_id" translatable="false">573524530918-g7ki49chk8mpp5hmol1566hfujjqikav.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">573524530918</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJzYgL76MxlFOWMphw7YnDpzkZmxR8Vsw</string>
+    <string name="google_app_id" translatable="false">1:573524530918:android:fc767de67180bd74950d27</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJzYgL76MxlFOWMphw7YnDpzkZmxR8Vsw</string>
+    <string name="google_storage_bucket" translatable="false">boardproject-90c2b.appspot.com</string>
+    <string name="project_id" translatable="false">boardproject-90c2b</string>
     <style name="Theme.BoardProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
