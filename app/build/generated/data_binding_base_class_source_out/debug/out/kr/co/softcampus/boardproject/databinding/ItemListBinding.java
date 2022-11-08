@@ -20,18 +20,14 @@ public final class ItemListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView tvContent;
-
-  @NonNull
   public final TextView tvTitle;
 
   @NonNull
   public final TextView tvWriteDate;
 
-  private ItemListBinding(@NonNull ConstraintLayout rootView, @NonNull TextView tvContent,
-      @NonNull TextView tvTitle, @NonNull TextView tvWriteDate) {
+  private ItemListBinding(@NonNull ConstraintLayout rootView, @NonNull TextView tvTitle,
+      @NonNull TextView tvWriteDate) {
     this.rootView = rootView;
-    this.tvContent = tvContent;
     this.tvTitle = tvTitle;
     this.tvWriteDate = tvWriteDate;
   }
@@ -63,12 +59,6 @@ public final class ItemListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.tv_content;
-      TextView tvContent = ViewBindings.findChildViewById(rootView, id);
-      if (tvContent == null) {
-        break missingId;
-      }
-
       id = R.id.tv_title;
       TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvTitle == null) {
@@ -81,7 +71,7 @@ public final class ItemListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemListBinding((ConstraintLayout) rootView, tvContent, tvTitle, tvWriteDate);
+      return new ItemListBinding((ConstraintLayout) rootView, tvTitle, tvWriteDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

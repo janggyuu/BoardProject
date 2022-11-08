@@ -23,13 +23,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnReg;
 
   @NonNull
-  public final EditText editTextTextPersonName;
+  public final EditText etRegContent;
 
   @NonNull
-  public final EditText editTextTextPersonName4;
+  public final EditText etRegTitle;
 
   @NonNull
   public final LinearLayout linearLayout;
@@ -40,14 +40,14 @@ public final class ActivityRegisterBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull EditText editTextTextPersonName, @NonNull EditText editTextTextPersonName4,
+  private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnReg,
+      @NonNull EditText etRegContent, @NonNull EditText etRegTitle,
       @NonNull LinearLayout linearLayout, @NonNull TextView textView2,
       @NonNull TextView textView5) {
     this.rootView = rootView;
-    this.button = button;
-    this.editTextTextPersonName = editTextTextPersonName;
-    this.editTextTextPersonName4 = editTextTextPersonName4;
+    this.btnReg = btnReg;
+    this.etRegContent = etRegContent;
+    this.etRegTitle = etRegTitle;
     this.linearLayout = linearLayout;
     this.textView2 = textView2;
     this.textView5 = textView5;
@@ -80,21 +80,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btn_reg;
+      Button btnReg = ViewBindings.findChildViewById(rootView, id);
+      if (btnReg == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName;
-      EditText editTextTextPersonName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName == null) {
+      id = R.id.et_reg_content;
+      EditText etRegContent = ViewBindings.findChildViewById(rootView, id);
+      if (etRegContent == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName4;
-      EditText editTextTextPersonName4 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName4 == null) {
+      id = R.id.et_reg_title;
+      EditText etRegTitle = ViewBindings.findChildViewById(rootView, id);
+      if (etRegTitle == null) {
         break missingId;
       }
 
@@ -116,8 +116,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((ConstraintLayout) rootView, button,
-          editTextTextPersonName, editTextTextPersonName4, linearLayout, textView2, textView5);
+      return new ActivityRegisterBinding((ConstraintLayout) rootView, btnReg, etRegContent,
+          etRegTitle, linearLayout, textView2, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

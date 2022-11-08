@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //로그인 성공 !!
-                            Intent intent = new Intent(LoginActivity.this, ListActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, Index.class);
                             startActivity(intent);
                             finish(); //현재 액티비티 파괴
                         }
@@ -93,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                 //회원 가입 화면으로 이동
                 Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

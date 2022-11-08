@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,25 +22,22 @@ public final class ActivityDetailBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnDelete;
 
   @NonNull
-  public final EditText editTextTextPersonName3;
+  public final Button btnDetailOk;
 
   @NonNull
-  public final TextView etContent;
-
-  @NonNull
-  public final TextView etTitle;
-
-  @NonNull
-  public final TextView etWriteDate;
+  public final Button btnEdit;
 
   @NonNull
   public final LinearLayout linearLayout;
 
   @NonNull
   public final LinearLayout linearLayout2;
+
+  @NonNull
+  public final LinearLayout linearLayout3;
 
   @NonNull
   public final TextView textView10;
@@ -55,23 +51,35 @@ public final class ActivityDetailBinding implements ViewBinding {
   @NonNull
   public final TextView textView6;
 
-  private ActivityDetailBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull EditText editTextTextPersonName3, @NonNull TextView etContent,
-      @NonNull TextView etTitle, @NonNull TextView etWriteDate, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView textView10,
-      @NonNull TextView textView2, @NonNull TextView textView4, @NonNull TextView textView6) {
+  @NonNull
+  public final TextView tvDetailContent;
+
+  @NonNull
+  public final TextView tvDetailTitle;
+
+  @NonNull
+  public final TextView tvEditWriteDate;
+
+  private ActivityDetailBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnDelete,
+      @NonNull Button btnDetailOk, @NonNull Button btnEdit, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout linearLayout2, @NonNull LinearLayout linearLayout3,
+      @NonNull TextView textView10, @NonNull TextView textView2, @NonNull TextView textView4,
+      @NonNull TextView textView6, @NonNull TextView tvDetailContent,
+      @NonNull TextView tvDetailTitle, @NonNull TextView tvEditWriteDate) {
     this.rootView = rootView;
-    this.button = button;
-    this.editTextTextPersonName3 = editTextTextPersonName3;
-    this.etContent = etContent;
-    this.etTitle = etTitle;
-    this.etWriteDate = etWriteDate;
+    this.btnDelete = btnDelete;
+    this.btnDetailOk = btnDetailOk;
+    this.btnEdit = btnEdit;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
+    this.linearLayout3 = linearLayout3;
     this.textView10 = textView10;
     this.textView2 = textView2;
     this.textView4 = textView4;
     this.textView6 = textView6;
+    this.tvDetailContent = tvDetailContent;
+    this.tvDetailTitle = tvDetailTitle;
+    this.tvEditWriteDate = tvEditWriteDate;
   }
 
   @Override
@@ -101,33 +109,21 @@ public final class ActivityDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btn_delete;
+      Button btnDelete = ViewBindings.findChildViewById(rootView, id);
+      if (btnDelete == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName3;
-      EditText editTextTextPersonName3 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName3 == null) {
+      id = R.id.btn_detail_ok;
+      Button btnDetailOk = ViewBindings.findChildViewById(rootView, id);
+      if (btnDetailOk == null) {
         break missingId;
       }
 
-      id = R.id.et_content;
-      TextView etContent = ViewBindings.findChildViewById(rootView, id);
-      if (etContent == null) {
-        break missingId;
-      }
-
-      id = R.id.et_title;
-      TextView etTitle = ViewBindings.findChildViewById(rootView, id);
-      if (etTitle == null) {
-        break missingId;
-      }
-
-      id = R.id.et_writeDate;
-      TextView etWriteDate = ViewBindings.findChildViewById(rootView, id);
-      if (etWriteDate == null) {
+      id = R.id.btn_edit;
+      Button btnEdit = ViewBindings.findChildViewById(rootView, id);
+      if (btnEdit == null) {
         break missingId;
       }
 
@@ -140,6 +136,12 @@ public final class ActivityDetailBinding implements ViewBinding {
       id = R.id.linearLayout2;
       LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout3;
+      LinearLayout linearLayout3 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout3 == null) {
         break missingId;
       }
 
@@ -167,9 +169,27 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailBinding((ConstraintLayout) rootView, button, editTextTextPersonName3,
-          etContent, etTitle, etWriteDate, linearLayout, linearLayout2, textView10, textView2,
-          textView4, textView6);
+      id = R.id.tv_detail_content;
+      TextView tvDetailContent = ViewBindings.findChildViewById(rootView, id);
+      if (tvDetailContent == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_detail_title;
+      TextView tvDetailTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvDetailTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_edit_writeDate;
+      TextView tvEditWriteDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvEditWriteDate == null) {
+        break missingId;
+      }
+
+      return new ActivityDetailBinding((ConstraintLayout) rootView, btnDelete, btnDetailOk, btnEdit,
+          linearLayout, linearLayout2, linearLayout3, textView10, textView2, textView4, textView6,
+          tvDetailContent, tvDetailTitle, tvEditWriteDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

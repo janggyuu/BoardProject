@@ -11,259 +11,304 @@
 9-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:4:5-66
-11-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:4:22-64
-12
-13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
-15-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:22-76
-16
-17    <application
-17-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:6:5-57:19
-18        android:allowBackup="true"
-18-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:7:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.8.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\103d438ac05a886e9c25b3bf8d43f975\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:8:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:9:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:10:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:11:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:12:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:13:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-29-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:14:9-65
-30        android:usesCleartextTraffic="true" >
-30-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:15:9-44
-31        <activity
-31-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:17:9-23:20
-32            android:name="kr.co.softcampus.boardproject.DetailActivity"
-32-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:18:13-43
-33            android:exported="false" >
-33-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:19:13-37
-34            <meta-data
-34-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:13-22:36
-35                android:name="android.app.lib_name"
-35-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:17-52
-36                android:value="" />
-36-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:17-33
-37        </activity>
-38        <activity
-38-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:9-30:20
-39            android:name="kr.co.softcampus.boardproject.RegisterActivity"
-39-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:13-45
-40            android:exported="false" >
-40-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:26:13-37
-41            <meta-data
-41-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:13-22:36
-42                android:name="android.app.lib_name"
-42-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:17-52
-43                android:value="" />
-43-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:17-33
-44        </activity>
-45        <activity
-45-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:31:9-37:20
-46            android:name="kr.co.softcampus.boardproject.ListActivity"
-46-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:32:13-41
-47            android:exported="false" >
-47-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:33:13-37
-48            <meta-data
-48-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:13-22:36
-49                android:name="android.app.lib_name"
-49-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:17-52
-50                android:value="" />
-50-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:17-33
-51        </activity>
-52        <activity
-52-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:38:9-44:20
-53            android:name="kr.co.softcampus.boardproject.JoinActivity"
-53-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:39:13-41
-54            android:exported="false" >
-54-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:40:13-37
-55            <meta-data
-55-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:13-22:36
-56                android:name="android.app.lib_name"
-56-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:17-52
-57                android:value="" />
-57-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:17-33
-58        </activity>
-59        <activity
-59-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:45:9-56:20
-60            android:name="kr.co.softcampus.boardproject.LoginActivity"
-60-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:46:13-42
-61            android:exported="true" >
-61-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:47:13-36
-62            <intent-filter>
-62-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:48:13-52:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:49:17-69
-63-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:49:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:51:17-77
-65-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:51:27-74
-66            </intent-filter>
-67
-68            <meta-data
-68-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:13-22:36
-69                android:name="android.app.lib_name"
-69-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:17-52
-70                android:value="" />
-70-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:17-33
-71        </activity>
-72
-73        <service
-73-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
-74            android:name="com.google.firebase.components.ComponentDiscoveryService"
-74-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:29:13-84
-75            android:directBootAware="true"
-75-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-76            android:exported="false" >
-76-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:30:13-37
-77            <meta-data
-77-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-78                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-78-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
-80            <meta-data
-80-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-81-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
-83        </service>
-84
-85        <activity
-85-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-86            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-86-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-87            android:excludeFromRecents="true"
-87-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-88            android:exported="true"
-88-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-89            android:launchMode="singleTask"
-89-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-90            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-90-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-91            <intent-filter>
-91-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-92                <action android:name="android.intent.action.VIEW" />
-92-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-92-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-93
-94                <category android:name="android.intent.category.DEFAULT" />
-94-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-94-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-95                <category android:name="android.intent.category.BROWSABLE" />
-95-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-95-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-96
-97                <data
-97-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-98                    android:host="firebase.auth"
-98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-99                    android:path="/"
-99-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-100                    android:scheme="genericidp" />
-100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-101            </intent-filter>
-102        </activity>
-103        <activity
-103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-104            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-105            android:excludeFromRecents="true"
-105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-106            android:exported="true"
-106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-107            android:launchMode="singleTask"
-107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-108            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-109            <intent-filter>
-109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-110                <action android:name="android.intent.action.VIEW" />
-110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-111
-112                <category android:name="android.intent.category.DEFAULT" />
-112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-113                <category android:name="android.intent.category.BROWSABLE" />
-113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-114
-115                <data
-115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-116                    android:host="firebase.auth"
-116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-117                    android:path="/"
-117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-118                    android:scheme="recaptcha" />
-118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-119            </intent-filter>
-120        </activity>
-121        <activity
-121-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-122            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-122-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-123            android:exported="false"
-123-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-124-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-125
-126        <provider
-126-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-127            android:name="com.google.firebase.provider.FirebaseInitProvider"
-127-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-128            android:authorities="kr.co.softcampus.boardproject.firebaseinitprovider"
-128-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-129            android:directBootAware="true"
-129-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-130            android:exported="false"
-130-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-131            android:initOrder="100" />
-131-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-132
-133        <meta-data
-133-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-134            android:name="com.google.android.gms.version"
-134-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-135            android:value="@integer/google_play_services_version" />
-135-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-136
-137        <provider
-137-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-138            android:name="androidx.startup.InitializationProvider"
-138-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-139            android:authorities="kr.co.softcampus.boardproject.androidx-startup"
-139-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-140            android:exported="false" >
-140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-141            <meta-data
-141-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-142                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-142-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-143                android:value="androidx.startup" />
-143-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-144            <meta-data
-144-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-145                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-145-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-146                android:value="androidx.startup" />
-146-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-147        </provider>
-148    </application>
-149
-150</manifest>
+11-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+17-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:22-76
+18
+19    <application
+19-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:9:5-82:19
+20        android:allowBackup="true"
+20-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:10:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.8.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\103d438ac05a886e9c25b3bf8d43f975\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:11:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:12:9-54
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:13:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:14:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:15:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:16:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+31-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:17:9-65
+32        android:usesCleartextTraffic="true" >
+32-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:18:9-44
+33        <activity
+33-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:20:9-26:20
+34            android:name="kr.co.softcampus.boardproject.EditActivity"
+34-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:21:13-41
+35            android:exported="false" >
+35-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:22:13-37
+36            <meta-data
+36-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+37                android:name="android.app.lib_name"
+37-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+38                android:value="" />
+38-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+39        </activity>
+40        <activity
+40-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:27:9-33:20
+41            android:name="kr.co.softcampus.boardproject.Index"
+41-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:28:13-34
+42            android:exported="false" >
+42-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:29:13-37
+43            <meta-data
+43-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+44                android:name="android.app.lib_name"
+44-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+45                android:value="" />
+45-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+46        </activity>
+47        <activity
+47-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:34:9-40:20
+48            android:name="kr.co.softcampus.boardproject.SimpleAlbum"
+48-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:35:13-40
+49            android:exported="false" >
+49-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:36:13-37
+50            <meta-data
+50-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+51                android:name="android.app.lib_name"
+51-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+52                android:value="" />
+52-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+53        </activity>
+54        <activity
+54-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:41:9-47:20
+55            android:name="kr.co.softcampus.boardproject.DetailActivity"
+55-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:42:13-43
+56            android:exported="false" >
+56-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:43:13-37
+57            <meta-data
+57-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+58                android:name="android.app.lib_name"
+58-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+59                android:value="" />
+59-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+60        </activity>
+61        <activity
+61-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:48:9-54:20
+62            android:name="kr.co.softcampus.boardproject.RegisterActivity"
+62-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:49:13-45
+63            android:exported="false" >
+63-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:50:13-37
+64            <meta-data
+64-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+65                android:name="android.app.lib_name"
+65-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+66                android:value="" />
+66-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+67        </activity>
+68        <activity
+68-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:55:9-61:20
+69            android:name="kr.co.softcampus.boardproject.ListActivity"
+69-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:56:13-41
+70            android:exported="false" >
+70-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:57:13-37
+71            <meta-data
+71-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+72                android:name="android.app.lib_name"
+72-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+73                android:value="" />
+73-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+74        </activity>
+75        <activity
+75-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:62:9-68:20
+76            android:name="kr.co.softcampus.boardproject.JoinActivity"
+76-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:63:13-41
+77            android:exported="false" >
+77-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:64:13-37
+78            <meta-data
+78-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+79                android:name="android.app.lib_name"
+79-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+80                android:value="" />
+80-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+81        </activity>
+82        <activity
+82-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:69:9-81:20
+83            android:name="kr.co.softcampus.boardproject.LoginActivity"
+83-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:70:13-42
+84            android:exported="true" >
+84-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:71:13-36
+85            <intent-filter>
+85-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:72:13-76:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:73:17-69
+86-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:73:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:75:17-77
+88-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:75:27-74
+89            </intent-filter>
+90
+91            <meta-data
+91-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:23:13-25:36
+92                android:name="android.app.lib_name"
+92-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:24:17-52
+93                android:value="" />
+93-->C:\Users\SAMSUNG\AndroidStudioProjects\BoardProject\app\src\main\AndroidManifest.xml:25:17-33
+94        </activity>
+95
+96        <service
+96-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:29:13-84
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:30:13-37
+100            <meta-data
+100-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+101                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+101-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-database:20.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\b1b7e53946cfa293b4a6a52a71d8e091\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+104                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+106        </service>
+107
+108        <activity
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+109            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+110            android:excludeFromRecents="true"
+110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+111            android:exported="true"
+111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+112            android:launchMode="singleTask"
+112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+114            <intent-filter>
+114-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+119
+120                <data
+120-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+121                    android:host="firebase.auth"
+121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+122                    android:path="/"
+122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+123                    android:scheme="genericidp" />
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+124            </intent-filter>
+125        </activity>
+126        <activity
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+127            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+128            android:excludeFromRecents="true"
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+129            android:exported="true"
+129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+130            android:launchMode="singleTask"
+130-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+132            <intent-filter>
+132-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+133                <action android:name="android.intent.action.VIEW" />
+133-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+133-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+134
+135                <category android:name="android.intent.category.DEFAULT" />
+135-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+135-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+136                <category android:name="android.intent.category.BROWSABLE" />
+136-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+136-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+137
+138                <data
+138-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+139                    android:host="firebase.auth"
+139-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+140                    android:path="/"
+140-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+141                    android:scheme="recaptcha" />
+141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\14aac5ac7b9994748a7bb5d9ac10c522\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+142            </intent-filter>
+143        </activity>
+144        <activity
+144-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+145-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\c3076eed31f1d041d093528b9cbbcc12\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+148
+149        <provider
+149-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+150            android:name="com.google.firebase.provider.FirebaseInitProvider"
+150-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+151            android:authorities="kr.co.softcampus.boardproject.firebaseinitprovider"
+151-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+152            android:directBootAware="true"
+152-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+153            android:exported="false"
+153-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+154            android:initOrder="100" />
+154-->[com.google.firebase:firebase-common:20.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\afb6075c9b084e05c6a386ffdd827d8a\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+155
+156        <meta-data
+156-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+157            android:name="com.google.android.gms.version"
+157-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+158            android:value="@integer/google_play_services_version" />
+158-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\1c2ec98c0b31493a2104bcc859708805\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+159
+160        <provider
+160-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+161            android:name="androidx.startup.InitializationProvider"
+161-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+162            android:authorities="kr.co.softcampus.boardproject.androidx-startup"
+162-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+163            android:exported="false" >
+163-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+164            <meta-data
+164-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+165                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+165-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+166                android:value="androidx.startup" />
+166-->[androidx.emoji2:emoji2:1.2.0] C:\Users\SAMSUNG\.gradle\caches\transforms-3\26ded07c175d6bee160f17a0b1e76b3b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+167            <meta-data
+167-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+168                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+168-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+169                android:value="androidx.startup" />
+169-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\SAMSUNG\.gradle\caches\transforms-3\cbb96b149b33ed54e7d52dbfb5a2e735\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+170        </provider>
+171    </application>
+172
+173</manifest>

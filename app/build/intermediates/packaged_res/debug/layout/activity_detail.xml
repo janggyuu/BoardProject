@@ -29,7 +29,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
-            android:id="@+id/et_title"
+            android:id="@+id/tv_detail_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -64,7 +64,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
-            android:id="@+id/et_writeDate"
+            android:id="@+id/tv_edit_writeDate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -75,6 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="409dp"
         android:layout_height="253dp"
         android:layout_marginStart="10dp"
@@ -98,7 +99,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
-            android:id="@+id/et_content"
+            android:id="@+id/tv_detail_content"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="#C8C6C6"
@@ -115,30 +116,39 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="286dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:hint="댓글 내용을 입력하세요"
-        android:inputType="textPersonName"
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="90dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="16dp"
-        android:text="등록하기"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3" />
+        <Button
+            android:id="@+id/btn_detail_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수정" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="삭제" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
