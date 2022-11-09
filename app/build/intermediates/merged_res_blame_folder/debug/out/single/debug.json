@@ -52,6 +52,10 @@
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\dialog_edit.xml"
     },
     {
+        "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\layout_image_list.xml.flat",
+        "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\image_list.xml"
+    },
+    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\drawable_ic_baseline_add_circle_24.xml.flat",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\drawable\\ic_baseline_add_circle_24.xml"
     },
@@ -68,10 +72,6 @@
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "kr.co.softcampus.boardproject.app-merged_res-34:/layout_activity_simple_album.xml.flat",
-        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_simple_album.xml"
-    },
-    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -82,6 +82,10 @@
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-pngs-29:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "kr.co.softcampus.boardproject.app-merged_res-34:/layout_image_list.xml.flat",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/image_list.xml"
     },
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\xml_backup_rules.xml.flat",

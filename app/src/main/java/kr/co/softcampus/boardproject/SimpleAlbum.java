@@ -2,6 +2,9 @@ package kr.co.softcampus.boardproject;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -11,30 +14,48 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class SimpleAlbum extends AppCompatActivity {
 
-    ImageView imageView;
     String imgName = "osz.png";    //이미지 이름
+    private AlbumAdapter adapter;
+
+    private RecyclerView recyclerView;
+    private ArrayList<MyImage> myImages;
+    private MyImage myImage;
+    private int curPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_album);
 
-        imageView = findViewById(R.id.imageView4);
+        recyclerView = findViewById(R.id.rv_image);
+
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new AlbumAdapter();
 
         try{
-            String imgPath = getCacheDir() + "/" + imgName; //내부 저장소에 저장되어 있는 이미지 경로
-            Bitmap bm = BitmapFactory.decodeFile(imgPath);
-            imageView.setImageBitmap(bm);
+            /*for(int i = 0; i < adapter.getItemCount(); i++) {
+                String imgPath = getCacheDir() + "/" + imgName; //내부 저장소에 저장되어 있는 이미지 경로
+                Bitmap bm = BitmapFactory.decodeFile(imgPath);
+                adapter.addItem(new MyImage(bm));
+            }*/
+            recyclerView.setAdapter(adapter);
 //            Toast.makeText(this, "파일 로드 성공", Toast.LENGTH_SHORT).show();
         }catch(Exception e){
             Toast.makeText(this, "파일 로드 실패", Toast.LENGTH_SHORT).show();
@@ -53,14 +74,16 @@ public class SimpleAlbum extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    File file = getCacheDir();  // 내부저장소 캐시 경로를 받아오기
+                    adapter.deleteItem(adapter.items);
+                    recyclerView.setAdapter(adapter);
+                    /*File file = getCacheDir();  // 내부저장소 캐시 경로를 받아오기
                     File[] flist = file.listFiles();
                     for (int i = 0; i < flist.length; i++) {    // 배열의 크기만큼 반복
                         if (flist[i].getName().equals(imgName)) {   // 삭제하고자 하는 이름과 같은 파일명이 있으면 실행
                             flist[i].delete();  // 파일 삭제
 //                            Toast.makeText(getApplicationContext(), "파일 삭제 성공", Toast.LENGTH_SHORT).show();
                         }
-                    }
+                    }*/
                 } catch (Exception e) {
                     Toast.makeText(getApplicationContext(), "파일 삭제 실패", Toast.LENGTH_SHORT).show();
                 }
@@ -89,10 +112,11 @@ public class SimpleAlbum extends AppCompatActivity {
                 try{
                     InputStream instream = resolver.openInputStream(fileUri);
                     Bitmap imgBitmap = BitmapFactory.decodeStream(instream);
-                    imageView.setImageBitmap(imgBitmap);
+                    adapter.addItem(new MyImage(imgBitmap));
+                    recyclerView.setAdapter(adapter);
                     instream.close();
 
-                    saveBitmapTOJpeg(imgBitmap);   //내부 저장소에 저장
+//                    saveBitmapTOJpeg(imgBitmap);   //내부 저장소에 저장
                     Toast.makeText(this, "파일 불러오기 성공", Toast.LENGTH_SHORT).show();
                 } catch (Exception e){
                     Toast.makeText(this, "파일 불러오기 실패패", Toast.LENGTH_SHORT).show();
@@ -102,7 +126,7 @@ public class SimpleAlbum extends AppCompatActivity {
         }
     }
 
-    public void saveBitmapTOJpeg(Bitmap bitmap){  //선택한 이미지 내부 저장소에 저장
+    /*public void saveBitmapTOJpeg(Bitmap bitmap){  //선택한 이미지 내부 저장소에 저장
         File tempFile = new File(getCacheDir(), imgName);   //파일 경로와 이름 넣기
         try{
             tempFile.createNewFile(); //자동으로 빈 파일 생성
@@ -115,5 +139,5 @@ public class SimpleAlbum extends AppCompatActivity {
             Toast.makeText(this, "파일 저장 실패", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
-    }
+    }*/
 }

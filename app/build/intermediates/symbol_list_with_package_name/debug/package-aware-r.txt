@@ -2936,7 +2936,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView4
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3072,6 +3072,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_image
 id rv_todo
 id save_non_transition_alpha
 id save_overlay_view
@@ -3367,6 +3368,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_edit
+layout image_list
 layout item_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

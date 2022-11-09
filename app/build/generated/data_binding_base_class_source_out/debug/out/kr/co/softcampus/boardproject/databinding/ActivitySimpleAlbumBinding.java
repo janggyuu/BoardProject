@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -27,14 +27,14 @@ public final class ActivitySimpleAlbumBinding implements ViewBinding {
   public final Button btnSelectImage;
 
   @NonNull
-  public final ImageView imageView4;
+  public final RecyclerView rvImage;
 
   private ActivitySimpleAlbumBinding(@NonNull LinearLayout rootView, @NonNull Button btnDeleteImage,
-      @NonNull Button btnSelectImage, @NonNull ImageView imageView4) {
+      @NonNull Button btnSelectImage, @NonNull RecyclerView rvImage) {
     this.rootView = rootView;
     this.btnDeleteImage = btnDeleteImage;
     this.btnSelectImage = btnSelectImage;
-    this.imageView4 = imageView4;
+    this.rvImage = rvImage;
   }
 
   @Override
@@ -76,14 +76,14 @@ public final class ActivitySimpleAlbumBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView4;
-      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView4 == null) {
+      id = R.id.rv_image;
+      RecyclerView rvImage = ViewBindings.findChildViewById(rootView, id);
+      if (rvImage == null) {
         break missingId;
       }
 
       return new ActivitySimpleAlbumBinding((LinearLayout) rootView, btnDeleteImage, btnSelectImage,
-          imageView4);
+          rvImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

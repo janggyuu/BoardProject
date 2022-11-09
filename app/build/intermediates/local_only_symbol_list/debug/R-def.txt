@@ -35,13 +35,14 @@ id et_pass
 id et_reg_content
 id et_reg_title
 id et_title_
-id imageView4
+id imageView2
 id joinPage
 id linearLayout
 id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
+id rv_image
 id rv_todo
 id tV3
 id textView
@@ -65,6 +66,7 @@ layout activity_login
 layout activity_register
 layout activity_simple_album
 layout dialog_edit
+layout image_list
 layout item_list
 mipmap ic_launcher
 mipmap ic_launcher_round
