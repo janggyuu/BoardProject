@@ -2789,6 +2789,7 @@ int id browser_actions_menu_item_text 0x7f080066
 int id browser_actions_menu_items 0x7f080067
 int id browser_actions_menu_view 0x7f080068
 int id btn_delete 0x7f080214
+int id btn_delete_image 0x7f080220
 int id btn_detail_ok 0x7f08021a
 int id btn_edit 0x7f080215
 int id btn_edit_ 0x7f080216
@@ -2797,8 +2798,8 @@ int id btn_login 0x7f08006a
 int id btn_logout 0x7f08006b
 int id btn_ok 0x7f08006c
 int id btn_reg 0x7f08020e
+int id btn_select_image 0x7f080221
 int id btn_write 0x7f08006d
-int id button2 0x7f08020a
 int id button3 0x7f08020b
 int id button4 0x7f08020c
 int id buttonPanel 0x7f08006f
@@ -2934,7 +2935,7 @@ int id ifRoom 0x7f0800f2
 int id ignore 0x7f0800f3
 int id ignoreRequest 0x7f0800f4
 int id image 0x7f0800f5
-int id imageView 0x7f08020d
+int id imageView4 0x7f080222
 int id immediateStop 0x7f0800f6
 int id included 0x7f0800f7
 int id indeterminate 0x7f0800f8

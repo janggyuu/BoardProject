@@ -2790,6 +2790,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_delete
+id btn_delete_image
 id btn_detail_ok
 id btn_edit
 id btn_edit_
@@ -2798,8 +2799,8 @@ id btn_login
 id btn_logout
 id btn_ok
 id btn_reg
+id btn_select_image
 id btn_write
-id button2
 id button3
 id button4
 id buttonPanel
@@ -2935,7 +2936,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
+id imageView4
 id immediateStop
 id included
 id indeterminate

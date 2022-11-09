@@ -11,6 +11,7 @@ drawable ic_baseline_add_circle_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id btn_delete
+id btn_delete_image
 id btn_detail_ok
 id btn_edit
 id btn_edit_
@@ -19,8 +20,8 @@ id btn_login
 id btn_logout
 id btn_ok
 id btn_reg
+id btn_select_image
 id btn_write
-id button2
 id button3
 id button4
 id button_join
@@ -34,7 +35,7 @@ id et_pass
 id et_reg_content
 id et_reg_title
 id et_title_
-id imageView
+id imageView4
 id joinPage
 id linearLayout
 id linearLayout2

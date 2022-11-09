@@ -21,16 +21,20 @@ public final class ActivitySimpleAlbumBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button button2;
+  public final Button btnDeleteImage;
 
   @NonNull
-  public final ImageView imageView;
+  public final Button btnSelectImage;
 
-  private ActivitySimpleAlbumBinding(@NonNull LinearLayout rootView, @NonNull Button button2,
-      @NonNull ImageView imageView) {
+  @NonNull
+  public final ImageView imageView4;
+
+  private ActivitySimpleAlbumBinding(@NonNull LinearLayout rootView, @NonNull Button btnDeleteImage,
+      @NonNull Button btnSelectImage, @NonNull ImageView imageView4) {
     this.rootView = rootView;
-    this.button2 = button2;
-    this.imageView = imageView;
+    this.btnDeleteImage = btnDeleteImage;
+    this.btnSelectImage = btnSelectImage;
+    this.imageView4 = imageView4;
   }
 
   @Override
@@ -60,19 +64,26 @@ public final class ActivitySimpleAlbumBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
+      id = R.id.btn_delete_image;
+      Button btnDeleteImage = ViewBindings.findChildViewById(rootView, id);
+      if (btnDeleteImage == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.btn_select_image;
+      Button btnSelectImage = ViewBindings.findChildViewById(rootView, id);
+      if (btnSelectImage == null) {
         break missingId;
       }
 
-      return new ActivitySimpleAlbumBinding((LinearLayout) rootView, button2, imageView);
+      id = R.id.imageView4;
+      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView4 == null) {
+        break missingId;
+      }
+
+      return new ActivitySimpleAlbumBinding((LinearLayout) rootView, btnDeleteImage, btnSelectImage,
+          imageView4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

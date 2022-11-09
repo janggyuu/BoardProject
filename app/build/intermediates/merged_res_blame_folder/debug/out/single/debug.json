@@ -28,10 +28,6 @@
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_edit.xml"
     },
     {
-        "merged": "kr.co.softcampus.boardproject.app-merged_res-34:/layout_activity_list.xml.flat",
-        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_list.xml"
-    },
-    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -70,6 +66,10 @@
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "kr.co.softcampus.boardproject.app-merged_res-34:/layout_activity_simple_album.xml.flat",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_simple_album.xml"
     },
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
