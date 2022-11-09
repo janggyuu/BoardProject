@@ -1,7 +1,15 @@
 [
     {
+        "merged": "kr.co.softcampus.boardproject.app-mergeDebugResources-33:/layout/activity_edit.xml",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_edit.xml"
+    },
+    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\dialog_edit.xml",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\dialog_edit.xml"
+    },
+    {
+        "merged": "kr.co.softcampus.boardproject.app-mergeDebugResources-33:/layout/activity_detail.xml",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_detail.xml"
     },
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_simple_album.xml",
@@ -20,12 +28,12 @@
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_edit.xml",
-        "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_edit.xml"
-    },
-    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\item_list.xml",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\item_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_edit.xml",
+        "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_edit.xml"
     },
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_list.xml",
@@ -40,8 +48,16 @@
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_register.xml"
     },
     {
+        "merged": "kr.co.softcampus.boardproject.app-mergeDebugResources-33:/layout/activity_register.xml",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_register.xml"
+    },
+    {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_index.xml",
         "source": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-main-36:\\layout\\activity_index.xml"
+    },
+    {
+        "merged": "kr.co.softcampus.boardproject.app-mergeDebugResources-33:/layout/activity_join.xml",
+        "source": "kr.co.softcampus.boardproject.app-main-36:/layout/activity_join.xml"
     },
     {
         "merged": "C:\\Users\\SAMSUNG\\.gradle\\daemon\\7.4\\kr.co.softcampus.boardproject.app-mergeDebugResources-33:\\layout\\activity_detail.xml",

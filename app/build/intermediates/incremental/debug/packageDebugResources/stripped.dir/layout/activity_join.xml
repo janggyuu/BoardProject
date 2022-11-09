@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/joinPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="132dp"
+        android:text="회원가입 페이지"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="아이디를 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinPage" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+    <Button
+        android:id="@+id/button_join"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="100dp"
+        android:text="회원가입 하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

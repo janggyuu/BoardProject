@@ -9,13 +9,11 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="680dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -42,18 +40,14 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="630dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
             android:id="@+id/textView4"
@@ -79,7 +73,6 @@
         android:layout_width="403dp"
         android:layout_height="561dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
@@ -87,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/textView6"
@@ -112,13 +105,11 @@
         android:layout_width="390dp"
         android:layout_height="46dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
         android:text="수정하기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
