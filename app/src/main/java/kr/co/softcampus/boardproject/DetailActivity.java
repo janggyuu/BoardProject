@@ -1,5 +1,7 @@
 package kr.co.softcampus.boardproject;
 
+import static kr.co.softcampus.boardproject.CustomAdapter.mContext;
+
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
@@ -11,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import kr.co.softcampus.boardproject.databinding.ActivityDetailBinding;
 
@@ -66,7 +69,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent resultIntent = new Intent();
 
-                setResult(RESULT_CANCELED, resultIntent);
+                setResult(2, resultIntent);
 
                 finish();
             }
@@ -113,7 +116,7 @@ public class DetailActivity extends AppCompatActivity {
                 tv_content.setText(item2.getContent());
                 tv_writeDate.setText(item2.getWriteDate());
 
-
+                Toast.makeText(mContext, "목록 수정이 완료 되었습니다.", Toast.LENGTH_SHORT).show();
             }
 
         }

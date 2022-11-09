@@ -62,6 +62,25 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
+        mBtn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mFirebaseAuth.signOut();
+
+                Intent intent = new Intent(ListActivity.this, LoginActivity.class);
+                startActivity(intent);
+                //             finish();
+            }
+        });
+
+        mBtn_write.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //RegisterActivity 로 이동
+                Intent intent = new Intent(ListActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     class DetailActivityCallback implements ActivityResultCallback<ActivityResult> {
@@ -88,11 +107,9 @@ public class ListActivity extends AppCompatActivity {
                 item.setTitle(title);
                 item.setContent(content);
                 mAdapter.notifyItemChanged(curPos, item);
-                Toast.makeText(mContext, "목록 수정이 완료 되었습니다.", Toast.LENGTH_SHORT).show();
-
             }
 
-            if(resultCode == RESULT_CANCELED){
+            if(resultCode == 2){
                 //delete from table
                 String beforeTime = item.getWriteDate();
                 mDBHelper.DeleteTodo(beforeTime);
@@ -117,27 +134,6 @@ public class ListActivity extends AppCompatActivity {
 
         //기존에 저장되어 있던 DB를 가져온다.
         loadRecentDB();
-
-        mBtn_logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mFirebaseAuth.signOut();
-
-                Intent intent = new Intent(ListActivity.this, LoginActivity.class);
-                startActivity(intent);
-   //             finish();
-            }
-        });
-
-        mBtn_write.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //RegisterActivity 로 이동
-                Intent intent = new Intent(ListActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     //저장 되어있던 DB를 가져온다

@@ -76,19 +76,18 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="409dp"
-        android:layout_height="253dp"
+        android:layout_width="400dp"
+        android:layout_height="577dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView6"
@@ -101,26 +100,20 @@
         <TextView
             android:id="@+id/tv_detail_content"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="match_parent"
             android:background="#C8C6C6"
             android:gravity="center_vertical"
             android:text="내용입니다."
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="댓글"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="407dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="329dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:orientation="horizontal"

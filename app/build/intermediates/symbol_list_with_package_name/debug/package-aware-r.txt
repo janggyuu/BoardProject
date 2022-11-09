@@ -2959,6 +2959,8 @@ id linear
 id linearLayout
 id linearLayout2
 id linearLayout3
+id linearLayout4
+id linearLayout5
 id listMode
 id list_item
 id marquee
@@ -3154,7 +3156,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView10
 id textView2
 id textView4
 id textView5

@@ -40,7 +40,7 @@ public final class ActivityDetailBinding implements ViewBinding {
   public final LinearLayout linearLayout3;
 
   @NonNull
-  public final TextView textView10;
+  public final LinearLayout linearLayout5;
 
   @NonNull
   public final TextView textView2;
@@ -63,7 +63,7 @@ public final class ActivityDetailBinding implements ViewBinding {
   private ActivityDetailBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnDelete,
       @NonNull Button btnDetailOk, @NonNull Button btnEdit, @NonNull LinearLayout linearLayout,
       @NonNull LinearLayout linearLayout2, @NonNull LinearLayout linearLayout3,
-      @NonNull TextView textView10, @NonNull TextView textView2, @NonNull TextView textView4,
+      @NonNull LinearLayout linearLayout5, @NonNull TextView textView2, @NonNull TextView textView4,
       @NonNull TextView textView6, @NonNull TextView tvDetailContent,
       @NonNull TextView tvDetailTitle, @NonNull TextView tvEditWriteDate) {
     this.rootView = rootView;
@@ -73,7 +73,7 @@ public final class ActivityDetailBinding implements ViewBinding {
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout3 = linearLayout3;
-    this.textView10 = textView10;
+    this.linearLayout5 = linearLayout5;
     this.textView2 = textView2;
     this.textView4 = textView4;
     this.textView6 = textView6;
@@ -145,9 +145,9 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
+      id = R.id.linearLayout5;
+      LinearLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout5 == null) {
         break missingId;
       }
 
@@ -188,8 +188,8 @@ public final class ActivityDetailBinding implements ViewBinding {
       }
 
       return new ActivityDetailBinding((ConstraintLayout) rootView, btnDelete, btnDetailOk, btnEdit,
-          linearLayout, linearLayout2, linearLayout3, textView10, textView2, textView4, textView6,
-          tvDetailContent, tvDetailTitle, tvEditWriteDate);
+          linearLayout, linearLayout2, linearLayout3, linearLayout5, textView2, textView4,
+          textView6, tvDetailContent, tvDetailTitle, tvEditWriteDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

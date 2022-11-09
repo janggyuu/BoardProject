@@ -38,6 +38,9 @@ public final class ActivityEditBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
+  public final LinearLayout linearLayout4;
+
+  @NonNull
   public final TextView textView2;
 
   @NonNull
@@ -52,14 +55,15 @@ public final class ActivityEditBinding implements ViewBinding {
   private ActivityEditBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnEdit,
       @NonNull EditText etEditContent, @NonNull EditText etEditTitle,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-      @NonNull TextView textView2, @NonNull TextView textView4, @NonNull TextView textView6,
-      @NonNull TextView tvEditWriteDate) {
+      @NonNull LinearLayout linearLayout4, @NonNull TextView textView2, @NonNull TextView textView4,
+      @NonNull TextView textView6, @NonNull TextView tvEditWriteDate) {
     this.rootView = rootView;
     this.btnEdit = btnEdit;
     this.etEditContent = etEditContent;
     this.etEditTitle = etEditTitle;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
+    this.linearLayout4 = linearLayout4;
     this.textView2 = textView2;
     this.textView4 = textView4;
     this.textView6 = textView6;
@@ -123,6 +127,12 @@ public final class ActivityEditBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout4;
+      LinearLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout4 == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
@@ -148,7 +158,7 @@ public final class ActivityEditBinding implements ViewBinding {
       }
 
       return new ActivityEditBinding((ConstraintLayout) rootView, btnEdit, etEditContent,
-          etEditTitle, linearLayout, linearLayout2, textView2, textView4, textView6,
+          etEditTitle, linearLayout, linearLayout2, linearLayout4, textView2, textView4, textView6,
           tvEditWriteDate);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -2958,6 +2958,8 @@ int id linear 0x7f080109
 int id linearLayout 0x7f08010a
 int id linearLayout2 0x7f08010b
 int id linearLayout3 0x7f08021b
+int id linearLayout4 0x7f08021c
+int id linearLayout5 0x7f08021d
 int id listMode 0x7f08010c
 int id list_item 0x7f08010d
 int id marquee 0x7f08010e
@@ -3153,7 +3155,6 @@ int id textSpacerNoTitle 0x7f0801cb
 int id textStart 0x7f0801cc
 int id textTop 0x7f0801cd
 int id textView 0x7f0801ce
-int id textView10 0x7f0801cf
 int id textView2 0x7f0801d0
 int id textView4 0x7f0801d1
 int id textView5 0x7f0801d2

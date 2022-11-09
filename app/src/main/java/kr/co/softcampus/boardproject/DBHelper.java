@@ -59,6 +59,36 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return todoItems;
     }
+
+    //Search 문 (할일 목록 검색)
+    public ArrayList<TodoItem> searchTodoList(String search_title){
+        ArrayList<TodoItem> todoItems = new ArrayList<>();
+
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM TodoList ORDER BY writeDate DESC", null); // * : 모든 데이터를 가져 오겠다란 뜻  ORDER BY DESC 내림차순으로 정렬해서 라는 뜻
+        if(cursor.getCount() != 0){
+            //조회해온 데이터가 있을때 내부 수행
+            while(cursor.moveToNext()){
+                String title = cursor.getString(cursor.getColumnIndexOrThrow("title"));
+                if(search_title == title) {
+                    int id = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
+                    String content = cursor.getString(cursor.getColumnIndexOrThrow("content"));
+                    String writeDate = cursor.getString(cursor.getColumnIndexOrThrow("writeDate"));
+
+                    TodoItem todoItem = new TodoItem();
+                    todoItem.setId(id);
+                    todoItem.setTitle(title);
+                    todoItem.setContent(content);
+                    todoItem.setWriteDate(writeDate);
+
+                    todoItems.add(todoItem);
+                }
+            }
+        }
+        cursor.close();
+
+        return todoItems;
+    }
     // INSERT 문 (할일 목록을 db에 넣는다)
     public void InsertTodo(String _title, String _content, String _writeDate){
         SQLiteDatabase db = getWritableDatabase();
